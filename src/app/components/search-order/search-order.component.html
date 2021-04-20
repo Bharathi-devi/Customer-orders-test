@@ -1,0 +1,18 @@
+<div class="searchpart">
+    <div>
+        <label for="customerId" class="label">CustomerId</label>
+        <input type="text" name="customerId" [(ngModel)]="customerId"/>
+        <button (click)="onSubmit()">Search</button>
+    </div>
+    <div *ngIf="showDetails">
+        
+        <p><strong>Customer Name:</strong> {{result$.custname}}</p>
+        <p><strong>Comapany Name: </strong> {{result$.compname}}</p>
+        <h3>Orders</h3>
+        <div *ngFor="let order of result$.orders">
+            <p>{{order.orderName}}</p>
+        </div>
+
+    </div>
+    <div *ngIf="error">{{error}}</div>
+</div>

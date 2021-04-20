@@ -1,0 +1,15 @@
+.searchpart{
+ font-size:1.5em;
+ padding:0.5em;
+}
+input{
+    padding:0.5em;
+    width:13%;
+    margin:0px 13px;
+}
+button{
+    padding: 0.4em;
+    font-size: 15px;
+    width: 25%;
+
+}
